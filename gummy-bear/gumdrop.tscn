@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c3427s2hlcmap"]
+
+[ext_resource type="Texture2D" uid="uid://cvn7ofwo2wi22" path="res://image.png" id="1_p3obq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x1udb"]
+radius = 39.841076
+
+[node name="Gumdrop" type="Area2D" unique_id=980422879 groups=["gumdrop"]]
+
+[node name="GumdropSprite" type="Sprite2D" parent="." unique_id=2024167330]
+position = Vector2(-124.00001, 691.99994)
+scale = Vector2(0.06591798, 0.06713875)
+texture = ExtResource("1_p3obq")
+
+[node name="PickupArea" type="CollisionShape2D" parent="." unique_id=856179529]
+position = Vector2(-122, 704)
+shape = SubResource("CircleShape2D_x1udb")

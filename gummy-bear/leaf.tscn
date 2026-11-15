@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cg1htw6y8hk7i"]
+
+[ext_resource type="Texture2D" uid="uid://cqskpjemqua3q" path="res://come frolick twin.jpg" id="1_p3lty"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cam1a"]
+radius = 213.05867
+
+[node name="Leaf" type="Area2D" unique_id=967630359 groups=["leaf"]]
+
+[node name="ComeFrolickTwin" type="Sprite2D" parent="." unique_id=663466250]
+position = Vector2(539.75, 445.25)
+scale = Vector2(0.5557823, 0.54537207)
+texture = ExtResource("1_p3lty")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2027448747 groups=["leaf"]]
+position = Vector2(534, 441)
+shape = SubResource("CircleShape2D_cam1a")
